@@ -3,6 +3,9 @@
 }
 .wrapper{
   padding: .5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 .top {
   display: flex;

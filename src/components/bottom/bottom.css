@@ -67,5 +67,41 @@ background: #E7ECF8;
 border: 1px dashed #E7ECF8;
 border-radius: 50%;
 font-size: 2rem;
+color: blue;
+}
+.model{
+  position: absolute;
+  background-color: rgb(229, 224, 224);
+  width: 50%;
+  height: 50%;
+  padding: 1rem;
+  z-index:99;
+}
+.buttonContainer{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.addMore{
+width: 181px;
+height: 48px;
+background: rgba(57, 114, 233, 0.1);
+border-radius: 5px;
 color: #3972E9;
+border: none;
+outline: none;
+cursor: pointer;
+
+}
+
+.postLoadBtn{
+  width: 181px;
+  height: 48px;
+  background: linear-gradient(180deg, #3975EE 0%, #2F60C3 100%);
+  border-radius: 5px;
+  color: white;
+  border: none;
+outline: none;
+cursor: pointer;
 }

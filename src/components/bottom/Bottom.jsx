@@ -6,6 +6,7 @@ import { useState } from "react";
 import { BiCurrentLocation } from "react-icons/bi";
 import { RxCross2 } from "react-icons/rx";
 import Lorries from "../lorries/Lorries";
+import { ContactCard } from "../contactCard/ContactCard";
 
 const material=[
   {id:1,truckNo:"Coal"},
@@ -22,18 +23,32 @@ const lorries=[
 ]
 
 const contacts=[
-  {id:1,img:"",truckNo:"contact number 1"},
-  {id:2,img:"",truckNo:"contact number 2"},
-  {id:3,img:"",truckNo:"contact number 3"},
-  {id:4,img:"",truckNo:"contact number 4"}
+  {id:1,img:"https://res.cloudinary.com/dxxh8iica/image/upload/v1661665337/cld-sample-5.jpg",truckNo:"Akash"},
+  {id:2,img:"https://res.cloudinary.com/dxxh8iica/image/upload/v1661665336/cld-sample-3.jpg",truckNo:"Ejaz"},
+  {id:3,img:"https://res.cloudinary.com/dxxh8iica/image/upload/v1661665337/cld-sample-5.jpg",truckNo:"Sanat"},
+  {id:4,img:"https://res.cloudinary.com/dxxh8iica/image/upload/v1661665336/cld-sample-3.jpg",truckNo:"Haneef"}
 ]
 
 export const Bottom = () => {
 const [tagPeople,setTagPeople]=useState([])
+const [modelOpen,setModelOpen]=useState(false)
+
+const renderModel=()=>(
+  <div className="model">
+    {contacts.map((each)=>(
+      <ContactCard key={each.id} contact={each}/>
+    ))}
+  </div>
+)
+
+const handleAdd=()=>{
+setModelOpen(!modelOpen)
+}
 
   return (
     <div className="formContainer">
       <div className="formWrapper">
+      {modelOpen && renderModel()}
         <div className="inputLableContainer">
           <label
             htmlFor="startingPoint"
@@ -64,7 +79,7 @@ const [tagPeople,setTagPeople]=useState([])
         <Lorries placeholder="Enter material type" label="Material Type*" options={material} />
 
         <div className="middleSelect">
-          <div style={{ flex: "1" }}>
+          <div style={{width:"45%"}}>
             <label
               htmlFor="Freight"
               placeholder="Enter starting point"
@@ -91,7 +106,7 @@ const [tagPeople,setTagPeople]=useState([])
             </div>
           </div>
 
-          <div style={{ flex: "1" }}>
+          <div style={{width:"45%"}}>
             <label
               htmlFor="Quantity"
               placeholder="Enter starting point"
@@ -131,8 +146,13 @@ const [tagPeople,setTagPeople]=useState([])
             <div className="cross"><RxCross2/></div>
             </div>
           ))}
-          <button className="addTag">+</button>
+          <button className="addTag" onClick={handleAdd}>+</button>
         </div>
+        </div>
+
+        <div className="buttonContainer">
+          <button className="addMore">ADD MORE</button>
+          <button className="postLoadBtn">POST LOAD</button>
         </div>
       </div>
     </div>
