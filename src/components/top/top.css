@@ -1,8 +1,10 @@
 .container {
   width: 100vw;
 }
+.wrapper{
+  padding: .5rem;
+}
 .top {
-  padding: 0.2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -17,4 +19,38 @@
 .icons {
   display: flex;
   align-items: center;
+  gap: 0.2rem;
+}
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.2rem;
+}
+.left {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.005em;
+}
+.postLoadHeading{
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.005em;
+}
+.postLoadPara{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 23px;
 }

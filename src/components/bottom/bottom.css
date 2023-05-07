@@ -1,0 +1,71 @@
+.formContainer {
+}
+.formWrapper {
+  padding: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.inputLableContainer {
+  width: 100%;
+  height: 73px;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.labelName {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  display: flex;
+  align-items: center;
+
+  color: #425466;
+}
+.inputContainer {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #e4e7f0;
+  border-radius: 5px;
+  width: 100%;
+}
+.input {
+  border: none;
+  outline: none;
+  height: 100%;
+  padding: 0.2rem;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+.middleSelect{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1rem;
+}
+.Freight{
+  width: 90%;
+  border: none;
+  height: 100%;
+}
+.addTag{
+  width: 54px;
+height: 54px;
+background: #E7ECF8;
+border: 1px dashed #E7ECF8;
+border-radius: 50%;
+font-size: 2rem;
+color: #3972E9;
+}

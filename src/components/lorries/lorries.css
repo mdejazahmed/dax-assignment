@@ -1,0 +1,29 @@
+.lorryContainer{
+    width: 100%;
+    margin-top: 1rem;
+    margin-top: 1rem;
+}
+.label{
+    
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+color: #425466;
+
+}
+.input{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.select{
+    width:90vw;
+    border: none;
+}
