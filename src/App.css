@@ -1,0 +1,11 @@
+.App{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(217, 217, 217);
+}
+.appWrpper{
+    width: 414px;
+    height: 896.45px;
+    background: #FFFFFF;
+}

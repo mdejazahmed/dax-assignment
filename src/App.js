@@ -5,9 +5,9 @@ import { Top } from './components/top/Top';
 function App() {
   return (
     <div className="App">
-    <div className="wrpper">
+    <div className="appWrpper">
     <Top/>
-     <Bottom/>
+    <Bottom/>
     </div>
     </div>
   );
