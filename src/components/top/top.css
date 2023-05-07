@@ -1,0 +1,20 @@
+.container {
+  width: 100vw;
+}
+.top {
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15.184px;
+  line-height: 18px;
+  letter-spacing: -0.607362px;
+  color: rgba(49, 49, 49, 0.9);
+}
+.icons {
+  display: flex;
+  align-items: center;
+}
